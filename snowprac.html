@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        .snowman{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 200px;
+        }
+        .head{
+            height:190px;
+            width:190px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .eyes span{
+            display: inline-block;
+            height: 0px;
+            width:15px;
+            border-radius: 50%;
+            background-color: black;
+            margin: 0 20px;
+            animation: eyes 0.5 linear forwards;
+            animation-delay: 1.5;
+
+            
+        }
+        .eyes{
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+        .nose{
+            height:0px;
+            width: 0px;
+            border-radius: 50%;
+            background-color: rgb(158, 18, 18);
+            margin-top: 15px;
+            /* margin-left: 90px; */
+            margin: auto;
+            animation: nose 0.5 linear forwards;
+            animation-delay: 2s;
+            
+        }
+        .mouth{
+            height:20px;
+            width: 0px;
+            background-color: #333;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+            animation: mouth 0.5 linear forwards;
+            animation-delay: 2.5s;
+        }
+        .body{
+            height:0px;
+            width: 0px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-top: -40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: body 1s linear forwards;
+            animation-delay: 0.5s;
+        }
+        .body span{
+            display: inline-block;
+            height:12px;
+            width: 12px;
+            background-color: #333;
+            border-radius: 50%;
+            margin-top: 10px;
+            transform: translateY(30px);
+            animation: dots 0.5 linear forwards;
+            animation-delay :3s;
+            visibility: hidden;
+        }
+        @keyframes body {
+            100%{
+                height: 240px;
+                width:240px;
+            }
+        }
+        @keyframes eyes {
+            100%{
+                height: 25px; 
+            }
+        }
+        @keyframes nose {
+            100%{
+                margin-top: 20px;
+                width:35px;
+                height: 59px;
+            }
+        }
+        @keyframes mouth {
+            100%{
+                width: 70px;
+            }
+        }
+        @keyframes dots {
+            100%{
+                
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+        <div class="snowman">
+        <div class="head">
+            <div class="eyes">
+            <span></span>
+            <span></span>
+        </div>
+
+        
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        
+    </div>
+        <div class="body">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date object</title>
+    <style>
+        div{
+            border: 2px none green; height:40px; display: flex;
+            margin-top: -30px;
+        }
+        #date{
+            height:10px; width:25%; border:2px none; margin-left:10px;
+            text-align: center;
+        }
+        #month{
+            height:20px; width:25%; border:2px none; margin-left:10px;
+            text-align: center;
+        }
+        #year{
+            height:20px; width:25%; border:2px none; margin-left:10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p class="main">1. Write  a javaScript function to get the current date.<br>
+        Ans:
+    </p>
+    <div>
+        <p id="date"></p>
+        <p id="month"></p>
+        <p id="year"></p>
+    </div>
+</body>
+</html>
+<script>
+    var time = new Date();
+    var ne = time.getDate();
+    var month = time.getMonth();
+    var year = time.getFullYear();
+    document.getElementById("date").innerHTML = "Current Date:"+ne +"<br>";
+    document.getElementById("month").innerHTML ="Month:"+month  +"<br>";
+    document.getElementById("year").innerHTML ="Year:"+year  +"<br>";
+    document.write("&nbsp"+"&nbsp"+"&nbsp"+"Current Date:"+"&nbsp" +ne+"/"+month+"/"+year);
+
+</script>

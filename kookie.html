@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kookie.css">
+</head>
+<body onload="showMd()">
+   <div id="modalbox">
+    <img src="img/cookie.png" alt="" class="cookies">
+    <p>We use cookies to optimize user experience and content</p>
+    <button onclick="closeMd()">Accept</button>
+    <img src="img/cross-icon.png" class="cross" onclick="closeMd()">
+   </div> 
+   
+</body>
+</html>
+<script>
+    var model = document.getElementById("modalbox");
+    function showMd(){
+        // setTimeout(()=>{
+        //     modalbox.style.display = "block"
+        // }, 1000)
+        setTimeout(function(){
+            model.style.display = "block";
+        }, 2000);
+    }
+    function closeMd(){
+        modalbox.style.display = "none"
+    }
+
+
+
+
+
+    
+</script>
